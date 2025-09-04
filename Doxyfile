@@ -1,0 +1,46 @@
+# Doxyfile 1.9.8
+
+# Project related configuration options
+PROJECT_NAME           = "My Project"
+PROJECT_BRIEF          = "A sample project using Doxygen"
+OUTPUT_DIRECTORY       = docs
+CREATE_SUBDIRS         = NO
+
+# Input
+INPUT                  = src include
+FILE_PATTERNS          = *.h *.cpp
+RECURSIVE              = YES
+
+# Build related configuration options
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+
+# Output formats
+GENERATE_HTML          = YES
+GENERATE_LATEX         = YES
+GENERATE_MAN           = NO
+
+USE_PDFLATEX           = NO
+LATEX_CMD_NAME         = lualatex
+
+# HTML configuration options
+HTML_OUTPUT            = html
+HTML_COLORSTYLE_HUE    = 220
+
+# Source browser
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = YES
+
+# Dot (graphviz) support
+HAVE_DOT               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+DOT_IMAGE_FORMAT       = svg
+
+# Misc
+QUIET                  = NO
+WARNINGS               = YES
+
+OUTPUT_LANGUAGE               = Japanese
+EXTRA_PACKAGES        = {luatexja}
