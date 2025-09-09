@@ -20,7 +20,7 @@ GTEST_OBJS   = $(patsubst $(SRC_DIR)/%.cpp,$(OBJ_DIR)/%.o,$(SRCS_TO_TEST)) $(pat
 
 # --- Binaries ---
 MAIN_BIN     = $(BUILD_DIR)/main
-GTEST_BIN    = $(BUILD_DIR)/hello_test
+GTEST_BIN    = $(BUILD_DIR)/gtest
 
 # --- Compiler & Flags ---
 CXX          = g++
@@ -68,3 +68,6 @@ clean:
 open:
 	@echo "Opening documentation in browser..."
 	$(BROWSER) $(DOC_DIR)/html/index.html
+
+run:
+	$(MAIN_BIN)

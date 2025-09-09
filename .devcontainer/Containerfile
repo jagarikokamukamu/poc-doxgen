@@ -1,0 +1,18 @@
+FROM library/rockylinux:8.9-minimal
+
+# Install necessary packages
+RUN microdnf install --enablerepo=devel -y \
+    gcc-c++ \
+    doxygen \
+    git \
+    make \
+    graphviz \
+    gtest-devel \
+    tar \
+    && microdnf clean all
+
+# Build the project
+# RUN make
+
+# Set the entry point
+CMD ["make"]
