@@ -42,5 +42,5 @@ DOT_IMAGE_FORMAT       = svg
 QUIET                  = NO
 WARNINGS               = YES
 
-OUTPUT_LANGUAGE               = Japanese
-EXTRA_PACKAGES        = {luatexja}
+OUTPUT_LANGUAGE        = Japanese
+EXTRA_PACKAGES         = {luatexja}
